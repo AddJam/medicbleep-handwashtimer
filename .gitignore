@@ -1,3 +1,5 @@
+package-lock.json
+yarn.lock
 # OSX
 #
 .DS_Store
@@ -57,6 +59,7 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+/ios/Podfile.lock
 
 # Local config
-/config/local.js
+/app/config/local.js
