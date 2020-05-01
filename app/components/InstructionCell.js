@@ -25,7 +25,6 @@ const InstructionCell = ({ item }) => {
           <Text style={dayView}>{body}</Text>
         </View>
       </View>
-      <Divider />
     </View>
   )
 }
@@ -37,9 +36,10 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 10,
   },
   timeBgView: {
-    width: 65,
+    width: 40,
     height: 40,
     marginLeft: 30,
     backgroundColor: colors.navigationHeader,

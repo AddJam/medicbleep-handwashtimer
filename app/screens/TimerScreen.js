@@ -1,4 +1,7 @@
 import React from 'react'
+import { TimerButton } from '../components'
+import { colors } from '../config'
+
 import { View, SafeAreaView, StyleSheet, FlatList } from 'react-native'
 import { InstructionCell } from '../components'
 
@@ -43,6 +46,8 @@ const TimerScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={safeAreaStyle}>
       <View style={container}>
+        <TimerButton timerStart={true} image="thumbs-up" text="Seconds" />
+
         <FlatList
           style={flatListStyle}
           data={data}
@@ -53,12 +58,13 @@ const TimerScreen = ({ navigation }) => {
     </SafeAreaView>
   )
 }
-
 export default TimerScreen
 
+const { white } = colors
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: white,
   },
   flatListStyle: {
     flex: 1,
